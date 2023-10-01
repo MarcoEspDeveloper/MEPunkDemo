@@ -20,9 +20,9 @@ class ServiceDataSource: ServiceDataSourceProtocol {
         self.sessionManager = Session(configuration: configuration)
     }
     
-    func getServiceRequest(urlPath: String, completion: @escaping (Swift.Result<Any?, NSError>) -> Void) {
+    func getServiceRequest(urlPath: String, completion: @escaping (Result<Any?, NSError>) -> Void) {
         
-        let url = urlPath
+        let url = "\(Constants.ConnectionUrl.baseUrl)\(urlPath)"
         
         self.sessionManager?.request(url).validate().responseData(completionHandler: { (response) in
             

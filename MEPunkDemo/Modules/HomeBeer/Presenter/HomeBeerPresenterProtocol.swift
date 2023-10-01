@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+protocol HomeBeerPresenterProtocol {
+    
+    func getBeers()
+    func didGetBeers(beerList: [BeerModel])
+    func failGetBeers(error: ErrorModel)
+    
+    func getBeerList() -> [BeerModel]
+}
