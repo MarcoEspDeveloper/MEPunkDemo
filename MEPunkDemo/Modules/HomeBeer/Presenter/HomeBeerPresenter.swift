@@ -22,6 +22,7 @@ class HomeBeerPresenter: HomeBeerPresenterProtocol {
         self.router = HomeBeerRouter(withView: self.homeBeerView)
     }
     
+    // Call to request beer list
     func getBeers() {
         
         self.interactor?.getBeers()
@@ -31,12 +32,15 @@ class HomeBeerPresenter: HomeBeerPresenterProtocol {
         
         self.beerList = []
         self.beerList.append(contentsOf: beerList)
+        
+        self.homeBeerView.showBeerList()
     }
     
     func failGetBeers(error: ErrorModel) {
         
     }
     
+    // Get loaded local beer list
     func getBeerList() -> [BeerModel] {
         
         return self.beerList

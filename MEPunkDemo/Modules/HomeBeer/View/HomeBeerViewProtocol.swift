@@ -9,5 +9,5 @@ import Foundation
 
 protocol HomeBeerViewProtocol: AnyObject {
     
-    
+    func showBeerList()
 }
