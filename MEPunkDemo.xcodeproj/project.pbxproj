@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A942138C2AC888A00062C732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942138B2AC888A00062C732 /* AppDelegate.swift */; };
 		A942138E2AC888A00062C732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942138D2AC888A00062C732 /* SceneDelegate.swift */; };
-		A94213902AC888A00062C732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942138F2AC888A00062C732 /* ViewController.swift */; };
+		A94213902AC888A00062C732 /* HomeBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942138F2AC888A00062C732 /* HomeBeerViewController.swift */; };
 		A94213932AC888A00062C732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94213912AC888A00062C732 /* Main.storyboard */; };
 		A94213962AC888A00062C732 /* MEPunkDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A94213942AC888A00062C732 /* MEPunkDemo.xcdatamodeld */; };
 		A94213982AC888A10062C732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94213972AC888A10062C732 /* Assets.xcassets */; };
@@ -17,6 +17,22 @@
 		A94213A62AC888A10062C732 /* MEPunkDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94213A52AC888A10062C732 /* MEPunkDemoTests.swift */; };
 		A94213B02AC888A10062C732 /* MEPunkDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94213AF2AC888A10062C732 /* MEPunkDemoUITests.swift */; };
 		A94213B22AC888A10062C732 /* MEPunkDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94213B12AC888A10062C732 /* MEPunkDemoUITestsLaunchTests.swift */; };
+		A9BEB8042AC8FD63001E21D2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A9BEB8032AC8FD63001E21D2 /* Alamofire */; };
+		A9BEB8072AC8FD77001E21D2 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = A9BEB8062AC8FD77001E21D2 /* MBProgressHUD */; };
+		A9BEB80A2AC90254001E21D2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A9BEB8092AC90254001E21D2 /* Kingfisher */; };
+		A9BEB8112AC90318001E21D2 /* ServiceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8102AC90318001E21D2 /* ServiceDataSource.swift */; };
+		A9BEB8132AC90323001E21D2 /* ServiceDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8122AC90323001E21D2 /* ServiceDataSourceProtocol.swift */; };
+		A9BEB81C2AC906A0001E21D2 /* HomeBeerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB81B2AC906A0001E21D2 /* HomeBeerInteractor.swift */; };
+		A9BEB81E2AC906B1001E21D2 /* HomeBeerInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB81D2AC906B1001E21D2 /* HomeBeerInteractorProtocol.swift */; };
+		A9BEB8202AC906C2001E21D2 /* HomeBeerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB81F2AC906C2001E21D2 /* HomeBeerPresenter.swift */; };
+		A9BEB8222AC906D0001E21D2 /* HomeBeerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8212AC906D0001E21D2 /* HomeBeerPresenterProtocol.swift */; };
+		A9BEB8242AC906EA001E21D2 /* HomeBeerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8232AC906EA001E21D2 /* HomeBeerRouter.swift */; };
+		A9BEB8262AC906FD001E21D2 /* HomeBeerRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8252AC906FD001E21D2 /* HomeBeerRouterProtocol.swift */; };
+		A9BEB8282AC9070B001E21D2 /* HomeBeerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8272AC9070B001E21D2 /* HomeBeerConfigurator.swift */; };
+		A9BEB82A2AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8292AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift */; };
+		A9BEB82C2AC90748001E21D2 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB82B2AC90748001E21D2 /* BeerModel.swift */; };
+		A9BEB82E2AC90CDB001E21D2 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB82D2AC90CDB001E21D2 /* ErrorModel.swift */; };
+		A9BEB8302AC90D48001E21D2 /* HomeBeerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB82F2AC90D48001E21D2 /* HomeBeerViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +56,7 @@
 		A94213882AC888A00062C732 /* MEPunkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEPunkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A942138B2AC888A00062C732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A942138D2AC888A00062C732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A942138F2AC888A00062C732 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A942138F2AC888A00062C732 /* HomeBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerViewController.swift; sourceTree = "<group>"; };
 		A94213922AC888A00062C732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A94213952AC888A00062C732 /* MEPunkDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MEPunkDemo.xcdatamodel; sourceTree = "<group>"; };
 		A94213972AC888A10062C732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +67,19 @@
 		A94213AB2AC888A10062C732 /* MEPunkDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPunkDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94213AF2AC888A10062C732 /* MEPunkDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEPunkDemoUITests.swift; sourceTree = "<group>"; };
 		A94213B12AC888A10062C732 /* MEPunkDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEPunkDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9BEB8102AC90318001E21D2 /* ServiceDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDataSource.swift; sourceTree = "<group>"; };
+		A9BEB8122AC90323001E21D2 /* ServiceDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDataSourceProtocol.swift; sourceTree = "<group>"; };
+		A9BEB81B2AC906A0001E21D2 /* HomeBeerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerInteractor.swift; sourceTree = "<group>"; };
+		A9BEB81D2AC906B1001E21D2 /* HomeBeerInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerInteractorProtocol.swift; sourceTree = "<group>"; };
+		A9BEB81F2AC906C2001E21D2 /* HomeBeerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerPresenter.swift; sourceTree = "<group>"; };
+		A9BEB8212AC906D0001E21D2 /* HomeBeerPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerPresenterProtocol.swift; sourceTree = "<group>"; };
+		A9BEB8232AC906EA001E21D2 /* HomeBeerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerRouter.swift; sourceTree = "<group>"; };
+		A9BEB8252AC906FD001E21D2 /* HomeBeerRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerRouterProtocol.swift; sourceTree = "<group>"; };
+		A9BEB8272AC9070B001E21D2 /* HomeBeerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerConfigurator.swift; sourceTree = "<group>"; };
+		A9BEB8292AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		A9BEB82B2AC90748001E21D2 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
+		A9BEB82D2AC90CDB001E21D2 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		A9BEB82F2AC90D48001E21D2 /* HomeBeerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BEB80A2AC90254001E21D2 /* Kingfisher in Frameworks */,
+				A9BEB8072AC8FD77001E21D2 /* MBProgressHUD in Frameworks */,
+				A9BEB8042AC8FD63001E21D2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +133,11 @@
 		A942138A2AC888A00062C732 /* MEPunkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A9BEB80B2AC90272001E21D2 /* Data */,
+				A9BEB80D2AC90287001E21D2 /* Model */,
+				A9BEB80C2AC90278001E21D2 /* Modules */,
 				A942138B2AC888A00062C732 /* AppDelegate.swift */,
 				A942138D2AC888A00062C732 /* SceneDelegate.swift */,
-				A942138F2AC888A00062C732 /* ViewController.swift */,
 				A94213912AC888A00062C732 /* Main.storyboard */,
 				A94213972AC888A10062C732 /* Assets.xcassets */,
 				A94213992AC888A10062C732 /* LaunchScreen.storyboard */,
@@ -130,6 +164,113 @@
 			path = MEPunkDemoUITests;
 			sourceTree = "<group>";
 		};
+		A9BEB80B2AC90272001E21D2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB80E2AC90299001E21D2 /* Network */,
+				A9BEB80F2AC902A0001E21D2 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A9BEB80C2AC90278001E21D2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB8142AC90382001E21D2 /* HomeBeer */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A9BEB80D2AC90287001E21D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB82B2AC90748001E21D2 /* BeerModel.swift */,
+				A9BEB82D2AC90CDB001E21D2 /* ErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9BEB80E2AC90299001E21D2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB8102AC90318001E21D2 /* ServiceDataSource.swift */,
+				A9BEB8122AC90323001E21D2 /* ServiceDataSourceProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A9BEB80F2AC902A0001E21D2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB81A2AC903BE001E21D2 /* HomeBeer */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A9BEB8142AC90382001E21D2 /* HomeBeer */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB8192AC903AA001E21D2 /* Configurator */,
+				A9BEB8182AC903A4001E21D2 /* Router */,
+				A9BEB8172AC9039D001E21D2 /* Presenter */,
+				A9BEB8162AC90398001E21D2 /* Interactor */,
+				A9BEB8152AC90393001E21D2 /* View */,
+			);
+			path = HomeBeer;
+			sourceTree = "<group>";
+		};
+		A9BEB8152AC90393001E21D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A942138F2AC888A00062C732 /* HomeBeerViewController.swift */,
+				A9BEB82F2AC90D48001E21D2 /* HomeBeerViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9BEB8162AC90398001E21D2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB81B2AC906A0001E21D2 /* HomeBeerInteractor.swift */,
+				A9BEB81D2AC906B1001E21D2 /* HomeBeerInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A9BEB8172AC9039D001E21D2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB81F2AC906C2001E21D2 /* HomeBeerPresenter.swift */,
+				A9BEB8212AC906D0001E21D2 /* HomeBeerPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A9BEB8182AC903A4001E21D2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB8232AC906EA001E21D2 /* HomeBeerRouter.swift */,
+				A9BEB8252AC906FD001E21D2 /* HomeBeerRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A9BEB8192AC903AA001E21D2 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB8272AC9070B001E21D2 /* HomeBeerConfigurator.swift */,
+				A9BEB8292AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		A9BEB81A2AC903BE001E21D2 /* HomeBeer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeBeer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +287,11 @@
 			dependencies = (
 			);
 			name = MEPunkDemo;
+			packageProductDependencies = (
+				A9BEB8032AC8FD63001E21D2 /* Alamofire */,
+				A9BEB8062AC8FD77001E21D2 /* MBProgressHUD */,
+				A9BEB8092AC90254001E21D2 /* Kingfisher */,
+			);
 			productName = MEPunkDemo;
 			productReference = A94213882AC888A00062C732 /* MEPunkDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +364,11 @@
 				Base,
 			);
 			mainGroup = A942137F2AC888A00062C732;
+			packageReferences = (
+				A9BEB8022AC8FD63001E21D2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A9BEB8052AC8FD77001E21D2 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				A9BEB8082AC90254001E21D2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A94213892AC888A00062C732 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,9 +413,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94213962AC888A00062C732 /* MEPunkDemo.xcdatamodeld in Sources */,
-				A94213902AC888A00062C732 /* ViewController.swift in Sources */,
+				A9BEB82A2AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift in Sources */,
+				A94213902AC888A00062C732 /* HomeBeerViewController.swift in Sources */,
+				A9BEB8132AC90323001E21D2 /* ServiceDataSourceProtocol.swift in Sources */,
+				A9BEB81C2AC906A0001E21D2 /* HomeBeerInteractor.swift in Sources */,
+				A9BEB8202AC906C2001E21D2 /* HomeBeerPresenter.swift in Sources */,
+				A9BEB8302AC90D48001E21D2 /* HomeBeerViewDelegate.swift in Sources */,
+				A9BEB82E2AC90CDB001E21D2 /* ErrorModel.swift in Sources */,
+				A9BEB8112AC90318001E21D2 /* ServiceDataSource.swift in Sources */,
+				A9BEB8282AC9070B001E21D2 /* HomeBeerConfigurator.swift in Sources */,
+				A9BEB82C2AC90748001E21D2 /* BeerModel.swift in Sources */,
 				A942138C2AC888A00062C732 /* AppDelegate.swift in Sources */,
+				A9BEB81E2AC906B1001E21D2 /* HomeBeerInteractorProtocol.swift in Sources */,
+				A9BEB8242AC906EA001E21D2 /* HomeBeerRouter.swift in Sources */,
+				A9BEB8262AC906FD001E21D2 /* HomeBeerRouterProtocol.swift in Sources */,
 				A942138E2AC888A00062C732 /* SceneDelegate.swift in Sources */,
+				A9BEB8222AC906D0001E21D2 /* HomeBeerPresenterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,8 +617,9 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -483,8 +648,9 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -615,6 +781,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9BEB8022AC8FD63001E21D2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+		A9BEB8052AC8FD77001E21D2 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		A9BEB8082AC90254001E21D2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9BEB8032AC8FD63001E21D2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BEB8022AC8FD63001E21D2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A9BEB8062AC8FD77001E21D2 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BEB8052AC8FD77001E21D2 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		A9BEB8092AC90254001E21D2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BEB8082AC90254001E21D2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A94213942AC888A00062C732 /* MEPunkDemo.xcdatamodeld */ = {
