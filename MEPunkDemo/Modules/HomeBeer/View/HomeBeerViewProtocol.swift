@@ -10,4 +10,5 @@ import Foundation
 protocol HomeBeerViewProtocol: AnyObject {
     
     func showBeerList()
+    func showBasicAlert(title: String, message: String)
 }

@@ -18,9 +18,9 @@ class HomeBeerInteractor: HomeBeerInteractorProtocol {
         self.repository = HomeBeerRepository()
     }
     
-    func getBeers() {
+    func getBeers(page: Int) {
         
-        self.repository?.getBeers() { (response, error) in
+        self.repository?.getBeers(page: page) { (response, error) in
                 
             if let beersResponse = response {
                 
@@ -30,6 +30,22 @@ class HomeBeerInteractor: HomeBeerInteractorProtocol {
             if let error = error {
                 
                 self.presenter?.failGetBeers(error: error as! ErrorModel)
+            }
+        }
+    }
+    
+    func getBeersByFood(food: String) {
+        
+        self.repository?.getBeersByFood(food: food) { (response, error) in
+            
+            if let beersResponse = response {
+                
+                self.presenter?.didGetBeersByFood(beerList: beersResponse)
+            }
+            
+            if let error = error {
+                
+                self.presenter?.failGetBeersByFood(error: error as! ErrorModel)
             }
         }
     }

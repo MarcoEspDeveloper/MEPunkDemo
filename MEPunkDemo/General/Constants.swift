@@ -14,6 +14,7 @@ enum Constants {
         
         static let baseUrl = "https://api.punkapi.com/v2"
         static let beersUrl = "/beers"
+        static let pageParamUrl = "page"
         static let foodParamUrl = "food"
     }
 }

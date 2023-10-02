@@ -15,6 +15,9 @@ class HomeBeerPresenter: HomeBeerPresenterProtocol {
     
     private var beerList: [BeerModel] = []
     
+    private var page: Int = 0
+    private var isLastPageLoaded = false
+    
     init(view: HomeBeerViewProtocol) {
         
         self.homeBeerView = view
@@ -25,12 +28,24 @@ class HomeBeerPresenter: HomeBeerPresenterProtocol {
     // Call to request beer list
     func getBeers() {
         
-        self.interactor?.getBeers()
+        self.interactor?.getBeers(page: self.page + 1)
     }
     
     func didGetBeers(beerList: [BeerModel]) {
         
-        self.beerList = []
+        if self.page == 0 {
+            
+            self.beerList = []
+        }
+        
+        if beerList.count > 0 {
+            
+            self.page += 1
+        } else {
+            
+            self.isLastPageLoaded = true
+        }
+        
         self.beerList.append(contentsOf: beerList)
         
         self.homeBeerView.showBeerList()
@@ -38,11 +53,37 @@ class HomeBeerPresenter: HomeBeerPresenterProtocol {
     
     func failGetBeers(error: ErrorModel) {
         
+        self.homeBeerView.showBasicAlert(title: "Error", message: error.description ?? "")
+    }
+    
+    // Call to request beer list by food param
+    func getBeersByFood(food: String) {
+        
+        self.interactor?.getBeersByFood(food: food)
+    }
+    
+    func didGetBeersByFood(beerList: [BeerModel]) {
+        
+        self.isLastPageLoaded = false
+        self.page = 0
+        self.beerList = beerList
+        
+        self.homeBeerView.showBeerList()
+    }
+    
+    func failGetBeersByFood(error: ErrorModel) {
+        
+        self.homeBeerView.showBasicAlert(title: "Error", message: error.description ?? "")
     }
     
     // Get loaded local beer list
     func getBeerList() -> [BeerModel] {
         
         return self.beerList
+    }
+    
+    func getIsLastPageLoaded() -> Bool {
+        
+        return self.isLastPageLoaded
     }
 }

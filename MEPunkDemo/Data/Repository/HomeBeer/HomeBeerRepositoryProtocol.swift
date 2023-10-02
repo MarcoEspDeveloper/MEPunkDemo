@@ -9,5 +9,6 @@ import Foundation
 
 protocol HomeBeerRepositoryProtocol {
     
-    func getBeers(completion: @escaping ([BeerModel]?, Error?) -> Void)
+    func getBeers(page: Int, completion: @escaping ([BeerModel]?, Error?) -> Void)
+    func getBeersByFood(food: String, completion: @escaping ([BeerModel]?, Error?) -> Void)
 }
