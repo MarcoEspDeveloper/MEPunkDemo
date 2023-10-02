@@ -17,6 +17,10 @@ protocol HomeBeerPresenterProtocol {
     func didGetBeersByFood(beerList: [BeerModel])
     func failGetBeersByFood(error: ErrorModel)
     
+    // Get local loaded data
     func getBeerList() -> [BeerModel]
     func getIsLastPageLoaded() -> Bool
+    
+    // Router navigation
+    func goToDetailBeer(beer: BeerModel)
 }

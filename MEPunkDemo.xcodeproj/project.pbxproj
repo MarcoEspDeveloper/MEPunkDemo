@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91689B62ACB212100871D9E /* DetailBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689B52ACB212100871D9E /* DetailBeerViewController.swift */; };
+		A91689B82ACB216900871D9E /* DetailBeerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689B72ACB216900871D9E /* DetailBeerViewProtocol.swift */; };
+		A91689BB2ACB3B8300871D9E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689BA2ACB3B8300871D9E /* BaseViewController.swift */; };
+		A91689BD2ACB3F9400871D9E /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689BC2ACB3F9400871D9E /* BaseNavigationController.swift */; };
+		A91689C02ACB420D00871D9E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689BF2ACB420D00871D9E /* Extensions.swift */; };
+		A91689C22ACB5B9100871D9E /* DetailBeerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689C12ACB5B9100871D9E /* DetailBeerPresenter.swift */; };
+		A91689C42ACB5B9E00871D9E /* DetailBeerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689C32ACB5B9E00871D9E /* DetailBeerPresenterProtocol.swift */; };
+		A91689C62ACB5C8300871D9E /* DetailBeerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689C52ACB5C8300871D9E /* DetailBeerInteractor.swift */; };
+		A91689C82ACB5C9400871D9E /* DetailBeerInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689C72ACB5C9400871D9E /* DetailBeerInteractorProtocol.swift */; };
+		A91689CA2ACB5D6D00871D9E /* DetailBeerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689C92ACB5D6D00871D9E /* DetailBeerRouter.swift */; };
+		A91689CC2ACB5D7A00871D9E /* DetailBeerRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689CB2ACB5D7A00871D9E /* DetailBeerRouterProtocol.swift */; };
+		A91689CE2ACB60A700871D9E /* DetailBeerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689CD2ACB60A700871D9E /* DetailBeerConfigurator.swift */; };
+		A91689D02ACB60B600871D9E /* DetailBeerConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91689CF2ACB60B600871D9E /* DetailBeerConfiguratorProtocol.swift */; };
 		A942138C2AC888A00062C732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942138B2AC888A00062C732 /* AppDelegate.swift */; };
 		A942138E2AC888A00062C732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942138D2AC888A00062C732 /* SceneDelegate.swift */; };
 		A94213902AC888A00062C732 /* HomeBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942138F2AC888A00062C732 /* HomeBeerViewController.swift */; };
@@ -57,6 +70,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A91689B52ACB212100871D9E /* DetailBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeerViewController.swift; sourceTree = "<group>"; };
+		A91689B72ACB216900871D9E /* DetailBeerViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeerViewProtocol.swift; sourceTree = "<group>"; };
+		A91689BA2ACB3B8300871D9E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A91689BC2ACB3F9400871D9E /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		A91689BF2ACB420D00871D9E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A91689C12ACB5B9100871D9E /* DetailBeerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeerPresenter.swift; sourceTree = "<group>"; };
+		A91689C32ACB5B9E00871D9E /* DetailBeerPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeerPresenterProtocol.swift; sourceTree = "<group>"; };
+		A91689C52ACB5C8300871D9E /* DetailBeerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeerInteractor.swift; sourceTree = "<group>"; };
+		A91689C72ACB5C9400871D9E /* DetailBeerInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeerInteractorProtocol.swift; sourceTree = "<group>"; };
+		A91689C92ACB5D6D00871D9E /* DetailBeerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeerRouter.swift; sourceTree = "<group>"; };
+		A91689CB2ACB5D7A00871D9E /* DetailBeerRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeerRouterProtocol.swift; sourceTree = "<group>"; };
+		A91689CD2ACB60A700871D9E /* DetailBeerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeerConfigurator.swift; sourceTree = "<group>"; };
+		A91689CF2ACB60B600871D9E /* DetailBeerConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeerConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		A94213882AC888A00062C732 /* MEPunkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEPunkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A942138B2AC888A00062C732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A942138D2AC888A00062C732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +144,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A91689B92ACB3B6F00871D9E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A91689BA2ACB3B8300871D9E /* BaseViewController.swift */,
+				A91689BC2ACB3F9400871D9E /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A91689BE2ACB41A000871D9E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A91689BF2ACB420D00871D9E /* Extensions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		A942137F2AC888A00062C732 = {
 			isa = PBXGroup;
 			children = (
@@ -142,9 +185,11 @@
 			isa = PBXGroup;
 			children = (
 				A9BEB8362AC9156A001E21D2 /* General */,
+				A91689B92ACB3B6F00871D9E /* Base */,
 				A9BEB80B2AC90272001E21D2 /* Data */,
 				A9BEB80D2AC90287001E21D2 /* Model */,
 				A9BEB80C2AC90278001E21D2 /* Modules */,
+				A91689BE2ACB41A000871D9E /* Util */,
 				A942138B2AC888A00062C732 /* AppDelegate.swift */,
 				A942138D2AC888A00062C732 /* SceneDelegate.swift */,
 				A94213912AC888A00062C732 /* Main.storyboard */,
@@ -242,6 +287,8 @@
 				A96532802ACA511B00482716 /* Cell */,
 				A942138F2AC888A00062C732 /* HomeBeerViewController.swift */,
 				A9BEB82F2AC90D48001E21D2 /* HomeBeerViewProtocol.swift */,
+				A91689B52ACB212100871D9E /* DetailBeerViewController.swift */,
+				A91689B72ACB216900871D9E /* DetailBeerViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +298,8 @@
 			children = (
 				A9BEB81B2AC906A0001E21D2 /* HomeBeerInteractor.swift */,
 				A9BEB81D2AC906B1001E21D2 /* HomeBeerInteractorProtocol.swift */,
+				A91689C52ACB5C8300871D9E /* DetailBeerInteractor.swift */,
+				A91689C72ACB5C9400871D9E /* DetailBeerInteractorProtocol.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -260,6 +309,8 @@
 			children = (
 				A9BEB81F2AC906C2001E21D2 /* HomeBeerPresenter.swift */,
 				A9BEB8212AC906D0001E21D2 /* HomeBeerPresenterProtocol.swift */,
+				A91689C12ACB5B9100871D9E /* DetailBeerPresenter.swift */,
+				A91689C32ACB5B9E00871D9E /* DetailBeerPresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -269,6 +320,8 @@
 			children = (
 				A9BEB8232AC906EA001E21D2 /* HomeBeerRouter.swift */,
 				A9BEB8252AC906FD001E21D2 /* HomeBeerRouterProtocol.swift */,
+				A91689C92ACB5D6D00871D9E /* DetailBeerRouter.swift */,
+				A91689CB2ACB5D7A00871D9E /* DetailBeerRouterProtocol.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -278,6 +331,8 @@
 			children = (
 				A9BEB8272AC9070B001E21D2 /* HomeBeerConfigurator.swift */,
 				A9BEB8292AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift */,
+				A91689CD2ACB60A700871D9E /* DetailBeerConfigurator.swift */,
+				A91689CF2ACB60B600871D9E /* DetailBeerConfiguratorProtocol.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -443,23 +498,36 @@
 				A9BEB8322AC9103F001E21D2 /* HomeBeerRepository.swift in Sources */,
 				A94213962AC888A00062C732 /* MEPunkDemo.xcdatamodeld in Sources */,
 				A9BEB82A2AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift in Sources */,
+				A91689B82ACB216900871D9E /* DetailBeerViewProtocol.swift in Sources */,
 				A94213902AC888A00062C732 /* HomeBeerViewController.swift in Sources */,
+				A91689BB2ACB3B8300871D9E /* BaseViewController.swift in Sources */,
 				A9BEB8132AC90323001E21D2 /* ServiceDataSourceProtocol.swift in Sources */,
+				A91689C02ACB420D00871D9E /* Extensions.swift in Sources */,
 				A9BEB81C2AC906A0001E21D2 /* HomeBeerInteractor.swift in Sources */,
 				A9BEB8202AC906C2001E21D2 /* HomeBeerPresenter.swift in Sources */,
 				A9BEB8302AC90D48001E21D2 /* HomeBeerViewProtocol.swift in Sources */,
 				A96532822ACA513B00482716 /* HomeBeerTableViewCell.swift in Sources */,
 				A9BEB82E2AC90CDB001E21D2 /* ErrorModel.swift in Sources */,
+				A91689C82ACB5C9400871D9E /* DetailBeerInteractorProtocol.swift in Sources */,
+				A91689C42ACB5B9E00871D9E /* DetailBeerPresenterProtocol.swift in Sources */,
 				A9BEB8112AC90318001E21D2 /* ServiceDataSource.swift in Sources */,
 				A9BEB8282AC9070B001E21D2 /* HomeBeerConfigurator.swift in Sources */,
 				A9BEB8342AC91048001E21D2 /* HomeBeerRepositoryProtocol.swift in Sources */,
+				A91689C22ACB5B9100871D9E /* DetailBeerPresenter.swift in Sources */,
 				A9BEB82C2AC90748001E21D2 /* BeerModel.swift in Sources */,
 				A942138C2AC888A00062C732 /* AppDelegate.swift in Sources */,
+				A91689B62ACB212100871D9E /* DetailBeerViewController.swift in Sources */,
 				A9BEB81E2AC906B1001E21D2 /* HomeBeerInteractorProtocol.swift in Sources */,
 				A9BEB8382AC91580001E21D2 /* Constants.swift in Sources */,
+				A91689C62ACB5C8300871D9E /* DetailBeerInteractor.swift in Sources */,
+				A91689D02ACB60B600871D9E /* DetailBeerConfiguratorProtocol.swift in Sources */,
+				A91689CE2ACB60A700871D9E /* DetailBeerConfigurator.swift in Sources */,
 				A9BEB8242AC906EA001E21D2 /* HomeBeerRouter.swift in Sources */,
 				A9BEB8262AC906FD001E21D2 /* HomeBeerRouterProtocol.swift in Sources */,
 				A942138E2AC888A00062C732 /* SceneDelegate.swift in Sources */,
+				A91689CA2ACB5D6D00871D9E /* DetailBeerRouter.swift in Sources */,
+				A91689CC2ACB5D7A00871D9E /* DetailBeerRouterProtocol.swift in Sources */,
+				A91689BD2ACB3F9400871D9E /* BaseNavigationController.swift in Sources */,
 				A9BEB8222AC906D0001E21D2 /* HomeBeerPresenterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

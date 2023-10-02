@@ -9,4 +9,5 @@ import Foundation
 
 protocol HomeBeerRouterProtocol {
     
+    func goToDetailBeer(beer: BeerModel, originViewController: HomeBeerViewController)
 }

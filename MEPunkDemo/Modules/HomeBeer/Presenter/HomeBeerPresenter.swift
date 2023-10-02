@@ -86,4 +86,10 @@ class HomeBeerPresenter: HomeBeerPresenterProtocol {
         
         return self.isLastPageLoaded
     }
+    
+    // Router navigation
+    func goToDetailBeer(beer: BeerModel) {
+        
+        self.router?.goToDetailBeer(beer: beer, originViewController: self.homeBeerView as! HomeBeerViewController)
+    }
 }

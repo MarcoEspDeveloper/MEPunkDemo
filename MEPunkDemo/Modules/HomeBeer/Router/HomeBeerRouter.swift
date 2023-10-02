@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class HomeBeerRouter {
     
@@ -18,5 +19,11 @@ class HomeBeerRouter {
 
 extension HomeBeerRouter: HomeBeerRouterProtocol {
     
-    
+    func goToDetailBeer(beer: BeerModel, originViewController: HomeBeerViewController) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let destinyViewController = storyboard.instantiateViewController(withIdentifier: "DetailBeerViewController") as! DetailBeerViewController
+        destinyViewController.beer = beer
+        originViewController.navigationController?.pushViewController(destinyViewController, animated: true)
+    }
 }
