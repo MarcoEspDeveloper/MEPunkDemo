@@ -17,6 +17,7 @@
 		A94213A62AC888A10062C732 /* MEPunkDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94213A52AC888A10062C732 /* MEPunkDemoTests.swift */; };
 		A94213B02AC888A10062C732 /* MEPunkDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94213AF2AC888A10062C732 /* MEPunkDemoUITests.swift */; };
 		A94213B22AC888A10062C732 /* MEPunkDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94213B12AC888A10062C732 /* MEPunkDemoUITestsLaunchTests.swift */; };
+		A96532822ACA513B00482716 /* HomeBeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96532812ACA513B00482716 /* HomeBeerTableViewCell.swift */; };
 		A9BEB8042AC8FD63001E21D2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A9BEB8032AC8FD63001E21D2 /* Alamofire */; };
 		A9BEB8072AC8FD77001E21D2 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = A9BEB8062AC8FD77001E21D2 /* MBProgressHUD */; };
 		A9BEB80A2AC90254001E21D2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A9BEB8092AC90254001E21D2 /* Kingfisher */; };
@@ -32,7 +33,10 @@
 		A9BEB82A2AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8292AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift */; };
 		A9BEB82C2AC90748001E21D2 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB82B2AC90748001E21D2 /* BeerModel.swift */; };
 		A9BEB82E2AC90CDB001E21D2 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB82D2AC90CDB001E21D2 /* ErrorModel.swift */; };
-		A9BEB8302AC90D48001E21D2 /* HomeBeerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB82F2AC90D48001E21D2 /* HomeBeerViewDelegate.swift */; };
+		A9BEB8302AC90D48001E21D2 /* HomeBeerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB82F2AC90D48001E21D2 /* HomeBeerViewProtocol.swift */; };
+		A9BEB8322AC9103F001E21D2 /* HomeBeerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8312AC9103F001E21D2 /* HomeBeerRepository.swift */; };
+		A9BEB8342AC91048001E21D2 /* HomeBeerRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8332AC91048001E21D2 /* HomeBeerRepositoryProtocol.swift */; };
+		A9BEB8382AC91580001E21D2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BEB8372AC91580001E21D2 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,7 @@
 		A94213AB2AC888A10062C732 /* MEPunkDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPunkDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94213AF2AC888A10062C732 /* MEPunkDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEPunkDemoUITests.swift; sourceTree = "<group>"; };
 		A94213B12AC888A10062C732 /* MEPunkDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEPunkDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A96532812ACA513B00482716 /* HomeBeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerTableViewCell.swift; sourceTree = "<group>"; };
 		A9BEB8102AC90318001E21D2 /* ServiceDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDataSource.swift; sourceTree = "<group>"; };
 		A9BEB8122AC90323001E21D2 /* ServiceDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDataSourceProtocol.swift; sourceTree = "<group>"; };
 		A9BEB81B2AC906A0001E21D2 /* HomeBeerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerInteractor.swift; sourceTree = "<group>"; };
@@ -79,7 +84,10 @@
 		A9BEB8292AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		A9BEB82B2AC90748001E21D2 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 		A9BEB82D2AC90CDB001E21D2 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
-		A9BEB82F2AC90D48001E21D2 /* HomeBeerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerViewDelegate.swift; sourceTree = "<group>"; };
+		A9BEB82F2AC90D48001E21D2 /* HomeBeerViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerViewProtocol.swift; sourceTree = "<group>"; };
+		A9BEB8312AC9103F001E21D2 /* HomeBeerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerRepository.swift; sourceTree = "<group>"; };
+		A9BEB8332AC91048001E21D2 /* HomeBeerRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeerRepositoryProtocol.swift; sourceTree = "<group>"; };
+		A9BEB8372AC91580001E21D2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 		A942138A2AC888A00062C732 /* MEPunkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A9BEB8362AC9156A001E21D2 /* General */,
 				A9BEB80B2AC90272001E21D2 /* Data */,
 				A9BEB80D2AC90287001E21D2 /* Model */,
 				A9BEB80C2AC90278001E21D2 /* Modules */,
@@ -162,6 +171,14 @@
 				A94213B12AC888A10062C732 /* MEPunkDemoUITestsLaunchTests.swift */,
 			);
 			path = MEPunkDemoUITests;
+			sourceTree = "<group>";
+		};
+		A96532802ACA511B00482716 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A96532812ACA513B00482716 /* HomeBeerTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A9BEB80B2AC90272001E21D2 /* Data */ = {
@@ -222,8 +239,9 @@
 		A9BEB8152AC90393001E21D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A96532802ACA511B00482716 /* Cell */,
 				A942138F2AC888A00062C732 /* HomeBeerViewController.swift */,
-				A9BEB82F2AC90D48001E21D2 /* HomeBeerViewDelegate.swift */,
+				A9BEB82F2AC90D48001E21D2 /* HomeBeerViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -267,8 +285,18 @@
 		A9BEB81A2AC903BE001E21D2 /* HomeBeer */ = {
 			isa = PBXGroup;
 			children = (
+				A9BEB8312AC9103F001E21D2 /* HomeBeerRepository.swift */,
+				A9BEB8332AC91048001E21D2 /* HomeBeerRepositoryProtocol.swift */,
 			);
 			path = HomeBeer;
+			sourceTree = "<group>";
+		};
+		A9BEB8362AC9156A001E21D2 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A9BEB8372AC91580001E21D2 /* Constants.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,19 +440,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BEB8322AC9103F001E21D2 /* HomeBeerRepository.swift in Sources */,
 				A94213962AC888A00062C732 /* MEPunkDemo.xcdatamodeld in Sources */,
 				A9BEB82A2AC9071A001E21D2 /* HomeBeerConfiguratorProtocol.swift in Sources */,
 				A94213902AC888A00062C732 /* HomeBeerViewController.swift in Sources */,
 				A9BEB8132AC90323001E21D2 /* ServiceDataSourceProtocol.swift in Sources */,
 				A9BEB81C2AC906A0001E21D2 /* HomeBeerInteractor.swift in Sources */,
 				A9BEB8202AC906C2001E21D2 /* HomeBeerPresenter.swift in Sources */,
-				A9BEB8302AC90D48001E21D2 /* HomeBeerViewDelegate.swift in Sources */,
+				A9BEB8302AC90D48001E21D2 /* HomeBeerViewProtocol.swift in Sources */,
+				A96532822ACA513B00482716 /* HomeBeerTableViewCell.swift in Sources */,
 				A9BEB82E2AC90CDB001E21D2 /* ErrorModel.swift in Sources */,
 				A9BEB8112AC90318001E21D2 /* ServiceDataSource.swift in Sources */,
 				A9BEB8282AC9070B001E21D2 /* HomeBeerConfigurator.swift in Sources */,
+				A9BEB8342AC91048001E21D2 /* HomeBeerRepositoryProtocol.swift in Sources */,
 				A9BEB82C2AC90748001E21D2 /* BeerModel.swift in Sources */,
 				A942138C2AC888A00062C732 /* AppDelegate.swift in Sources */,
 				A9BEB81E2AC906B1001E21D2 /* HomeBeerInteractorProtocol.swift in Sources */,
+				A9BEB8382AC91580001E21D2 /* Constants.swift in Sources */,
 				A9BEB8242AC906EA001E21D2 /* HomeBeerRouter.swift in Sources */,
 				A9BEB8262AC906FD001E21D2 /* HomeBeerRouterProtocol.swift in Sources */,
 				A942138E2AC888A00062C732 /* SceneDelegate.swift in Sources */,

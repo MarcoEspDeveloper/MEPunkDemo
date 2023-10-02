@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol HomeBeerInteractorProtocol {
+    
+    func getBeers(page: Int)
+    func getBeersByFood(food: String)
+}

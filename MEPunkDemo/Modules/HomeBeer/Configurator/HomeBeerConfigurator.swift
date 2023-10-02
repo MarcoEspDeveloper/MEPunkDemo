@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class HomeBeerConfigurator: HomeBeerConfiguratorProtocol {
+    
+    func configure(viewController: HomeBeerViewController) {
+        
+        viewController.presenter = HomeBeerPresenter(view: viewController)
+    }
+}

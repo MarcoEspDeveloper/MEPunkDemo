@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol HomeBeerConfiguratorProtocol {
+    
+    func configure(viewController: HomeBeerViewController)
+}

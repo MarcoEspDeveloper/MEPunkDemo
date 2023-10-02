@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+class HomeBeerRouter {
+    
+    private weak var homeBeerViewProtocol: HomeBeerViewProtocol!
+    
+    init(withView view: HomeBeerViewProtocol) {
+        self.homeBeerViewProtocol = view
+    }
+}
+
+extension HomeBeerRouter: HomeBeerRouterProtocol {
+    
+    
+}

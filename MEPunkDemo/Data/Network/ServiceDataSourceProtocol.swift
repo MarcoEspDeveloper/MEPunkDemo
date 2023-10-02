@@ -9,5 +9,5 @@ import Foundation
 
 protocol ServiceDataSourceProtocol {
     
-    func getServiceRequest(urlPath: String, completion: @escaping (Swift.Result<Any?, NSError>) -> Void)
+    func getServiceRequest(urlPath: String, completion: @escaping (Result<Any?, NSError>) -> Void)
 }
