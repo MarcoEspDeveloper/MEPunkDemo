@@ -8,7 +8,7 @@
 import UIKit
 import MBProgressHUD
 
-class HomeBeerViewController: UIViewController {
+class HomeBeerViewController: BaseViewController {
 
     @IBOutlet weak var beersTableView: UITableView!
     @IBOutlet weak var beersSearchBar: UISearchBar!
@@ -41,6 +41,9 @@ class HomeBeerViewController: UIViewController {
 extension HomeBeerViewController {
     
     func setupView() {
+        
+        self.setupNavigationBar()
+        self.setupTitle(titleText: "Beers")
         
         self.beersTableView.tableFooterView?.isHidden = true
         
@@ -112,6 +115,14 @@ extension HomeBeerViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let beer = self.presenter?.getBeerList()[indexPath.row] {
+            
+            self.presenter?.goToDetailBeer(beer: beer)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
@@ -129,6 +140,7 @@ extension HomeBeerViewController: UITableViewDelegate, UITableViewDataSource {
         if (scrollView.contentOffset.y + scrollView.frame.size.height) >= scrollView.contentSize.height && !isLoadingList {
             
             isLoadingList = true
+            self.beersTableView.tableFooterView?.isHidden = false
             self.presenter?.getBeers()
         }
     }
