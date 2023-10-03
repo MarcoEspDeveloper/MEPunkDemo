@@ -43,6 +43,8 @@ extension DetailBeerViewController {
         
         self.navigationItem.leftBarButtonItem = navigationButtonBack
         
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        
         self.setupNavigationBar()
         self.setupTitle(titleText: "Beer info")
         
