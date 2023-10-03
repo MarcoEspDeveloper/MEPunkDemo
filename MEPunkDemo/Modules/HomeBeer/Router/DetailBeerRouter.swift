@@ -18,5 +18,8 @@ class DetailBeerRouter {
 
 extension DetailBeerRouter: DetailBeerRouterProtocol {
     
-    
+    func goToBack(originViewController: DetailBeerViewController) {
+        
+        originViewController.navigationController?.popViewController(animated: true)
+    }
 }
