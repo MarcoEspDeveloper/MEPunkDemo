@@ -128,6 +128,8 @@ extension HomeBeerViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        self.beersSearchBar.endEditing(true)
+        
         if let beer = self.presenter?.getBeerList()[indexPath.row] {
             
             self.presenter?.goToDetailBeer(beer: beer)
