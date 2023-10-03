@@ -45,6 +45,7 @@ extension HomeBeerViewController {
         self.setupNavigationBar()
         self.setupTitle(titleText: "Beers")
         
+        self.beersTableView.keyboardDismissMode = .onDrag
         self.beersTableView.tableFooterView?.isHidden = true
         
         let beersSearchToolBar = UIToolbar()
@@ -83,8 +84,17 @@ extension HomeBeerViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         
         searchBar.resignFirstResponder()
+        
         self.beersSearchBar.endEditing(true)
-        self.isSearching = false
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        self.beersSearchBar.endEditing(true)
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        self.isSearching = searchBar.text != nil && searchBar.text!.count > 0 ? true : false
     }
 }
 
