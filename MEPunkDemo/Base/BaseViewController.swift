@@ -21,7 +21,7 @@ extension BaseViewController {
         
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor(hex: "0e337c")
+        appearance.backgroundColor = UIColor(hex: Constants.AppColors.mainBeerBlue)
         
         self.navigationController?.navigationBar.standardAppearance = appearance
         self.navigationController?.navigationBar.scrollEdgeAppearance = appearance

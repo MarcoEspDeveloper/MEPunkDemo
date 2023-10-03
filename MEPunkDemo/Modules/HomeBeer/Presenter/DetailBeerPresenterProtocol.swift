@@ -11,4 +11,6 @@ protocol DetailBeerPresenterProtocol {
     
     func getBeer() -> BeerModel
     func setBeer(beer: BeerModel)
+    
+    func goToBack()
 }

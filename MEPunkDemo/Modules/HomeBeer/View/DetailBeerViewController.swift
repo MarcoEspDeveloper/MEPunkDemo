@@ -37,9 +37,16 @@ extension DetailBeerViewController {
     
     func setupVew() {
         
-        self.setupNavigationBar()
-        self.setupTitle(titleText: "Beers info")
+        // Setup navigation
+        let navigationButtonBack = UIBarButtonItem(image: UIImage(named: "image-arrow-back")?.withTintColor(.white, renderingMode: .alwaysTemplate), style: .plain, target: self, action: #selector(self.goToBack))
+        navigationButtonBack.tintColor = .white
         
+        self.navigationItem.leftBarButtonItem = navigationButtonBack
+        
+        self.setupNavigationBar()
+        self.setupTitle(titleText: "Beer info")
+        
+        // Set beer to presenter
         self.presenter?.setBeer(beer: self.beer)
         
         // Set info
@@ -47,7 +54,7 @@ extension DetailBeerViewController {
         
         if let url = URL(string: beer?.image_url ?? "") {
             
-            self.beerImage.kf.setImage(with: url, options: [.transition(.fade(0.5))])
+            self.beerImage.kf.setImage(with: url, placeholder: UIImage(named: "splash-logo"), options: [.transition(.fade(0.5))])
         }
         
         // ABV
@@ -155,6 +162,11 @@ extension DetailBeerViewController {
         self.beerNameLabel.attributedText = nameFullAttString
         self.beerTagLineLabel.attributedText = tagLineFullAttString
         self.beerDescriptionLabel.attributedText = descriptionFullAttString
+    }
+    
+    @objc func goToBack() {
+        
+        self.presenter?.goToBack()
     }
 }
 

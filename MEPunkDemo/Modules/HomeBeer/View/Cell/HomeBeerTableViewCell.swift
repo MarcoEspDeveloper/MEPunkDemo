@@ -34,7 +34,7 @@ extension HomeBeerTableViewCell {
         
         if let url = URL(string: beer?.image_url ?? "") {
             
-            self.beerImage.kf.setImage(with: url, options: [.transition(.fade(0.5))])
+            self.beerImage.kf.setImage(with: url, placeholder: UIImage(named: "splash-logo"), options: [.transition(.fade(0.5))])
         }
     }
 }

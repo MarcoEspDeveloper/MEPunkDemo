@@ -17,4 +17,10 @@ enum Constants {
         static let pageParamUrl = "page"
         static let foodParamUrl = "food"
     }
+    
+    // MARK: - Colors
+    enum AppColors {
+        
+        static let mainBeerBlue = "0E337C"
+    }
 }

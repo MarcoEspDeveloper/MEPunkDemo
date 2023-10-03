@@ -66,6 +66,7 @@ extension HomeBeerViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
+        self.beersTableView.tableFooterView?.isHidden = true
         self.beersTableView.setContentOffset(CGPointZero, animated: false)
         
         if searchText.count > 0 {
@@ -132,6 +133,7 @@ extension HomeBeerViewController: UITableViewDelegate, UITableViewDataSource {
         
         if (self.presenter?.getIsLastPageLoaded())! || isSearching {
             
+            self.footerActivityIndicator.stopAnimating()
             self.beersTableView.tableFooterView?.isHidden = true
             
             return
@@ -140,6 +142,7 @@ extension HomeBeerViewController: UITableViewDelegate, UITableViewDataSource {
         if (scrollView.contentOffset.y + scrollView.frame.size.height) >= scrollView.contentSize.height && !isLoadingList {
             
             isLoadingList = true
+            self.footerActivityIndicator.startAnimating()
             self.beersTableView.tableFooterView?.isHidden = false
             self.presenter?.getBeers()
         }

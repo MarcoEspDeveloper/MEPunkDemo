@@ -32,4 +32,9 @@ class DetailBeerPresenter: DetailBeerPresenterProtocol {
         
         self.beer = beer
     }
+    
+    // Go to back
+    func goToBack() {
+        self.router?.goToBack(originViewController: detailBeerView as! DetailBeerViewController)
+    }
 }
